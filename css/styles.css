@@ -436,10 +436,12 @@ button:hover {
 
 .intro {
     display:flex;
+    justify-content:center;
     vertical-align:middle;
-    align-content: center;
-    max-width: 700px;
+    align-items: center;
+    max-width: 900px;
     min-width:200px;
+    padding-left:16px;
 }
 
 .ftintro {
