@@ -83,7 +83,7 @@ header {
     /*justify-content:space-around;*/
     align-items:center;
     background-color: #F5F3ED;
-    padding: 8px 0px 0px 0px;
+    padding: 6px 0px 0px 0px;
     border-top:solid #9478C4 3px;
     border-bottom: solid #6A00BD 1px;
     box-shadow: 1px 2px 3px rgba(0, 0, 0, .25);
@@ -338,7 +338,6 @@ button:hover {
 }
 
 .title {
-    width:567px;
     height:70px;
     z-index: 2;
 }
@@ -360,7 +359,28 @@ button:hover {
     vertical-align:top;
     align-items:start;
     top: -16px;
-    margin: 0 10% 0 10%;
+    margin: 0 5% 0 5%;
+}
+
+.abouttext {
+    display:flex;
+    flex-direction: row;
+    vertical-align:top;
+    align-items: center;
+    padding: 0 16px 16px 16px;
+    display:inline; 
+    width:75%; 
+    margin-left: 4%;
+    margin-right: 8px;
+}
+
+.aboutimg {
+    display:flex;
+    flex-direction: row;
+    vertical-align:top;
+    align-items: center;
+    padding: 16px;
+    margin-right: 4%;
 }
 
 .skills {
@@ -395,27 +415,6 @@ button:hover {
     margin: 48px auto 24px auto;
 }
 
-.abouttext {
-    display:flex;
-    flex-direction: row;
-    vertical-align:top;
-    align-items: center;
-    padding: 16px;
-    display:inline; 
-    width:75%; 
-    margin-left: 4%;
-    margin-right: 8px;
-}
-
-.aboutimg {
-    display:flex;
-    flex-direction: row;
-    vertical-align:top;
-    align-items: center;
-    padding: 8px;
-    margin-right: 4%;
-}
-
 .grid_container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -441,7 +440,14 @@ button:hover {
     align-content: center;
     max-width: 700px;
     min-width:200px;
-    margin: 0 auto 0 auto;
+}
+
+.ftintro {
+    display:flex;
+    vertical-align:middle;
+    align-content: center;
+    max-width: 700px;
+    min-width:200px;
 }
 
 .photo {
@@ -725,8 +731,48 @@ footer {
         transform: rotate(-45deg) translate(20px, 20px);
     }
 
-}
+    .intro {
+        display:flex;
+        vertical-align:middle;
+        justify-content: center;
+        align-content: center;
+        max-width: 700px;
+        min-width:200px;
+        margin: 24px auto; 
+    }
 
+    .aboutflex {
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        vertical-align:top;
+        align-items:center;
+        position: relative;
+        top: -16px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .abouttext {
+        display:flex;
+        flex-direction: column;
+        vertical-align:top;
+        align-items: center;
+        padding: 10px;
+        width: auto;
+    }
+
+    .aboutimg {
+        display:flex;
+        flex-direction: column;
+        vertical-align:top;
+        align-items: center;
+        padding: 16px;
+        width:50%;
+        margin:auto;
+    }
+
+}
 
 
 
@@ -752,6 +798,12 @@ footer {
         width:100%;
     }
 
+    .navcontent {
+        display:flex;
+        justify-content: space-between;
+        padding: 0 10px 0 10px;
+        width: 100%;
+    }
     /* Mobile media query - flex*/
 
     .mainflex {
@@ -773,19 +825,20 @@ footer {
         padding:0;
     }
 
-    .aboutflex {
+    .aboutimg {
         display:flex;
-        flex-direction:column;
-        justify-content:center;
-        vertical-align: middle;
-        position: relative;
-        top: -16px;
-        margin: 0 5% 0 5%;
+        flex-direction: column;
+        vertical-align:top;
+        align-items: center;
+        padding: 16px;
+        width:90%;
+        margin:auto;
     }
 
-    .intro {
+    .ftintro {
         display:flex;
         vertical-align:middle;
+        justify-content: center;
         align-content: center;
         max-width: 700px;
         min-width:200px;
@@ -811,29 +864,7 @@ footer {
         align-items:center;
         padding-bottom: 16px;
     }
-
-    .abouttext {
-        display:flex;
-        flex-direction: column;
-        vertical-align:top;
-        align-content: center;
-        padding: 16px;
-        display:inline; 
-        width:100%; 
-        margin:auto;
-        margin-top: 8px;
-    }
-    
-    .aboutimg {
-        display:flex;
-        flex-direction: column;
-        vertical-align:top;
-        align-items: center;
-        padding: 16px;
-        width:90%;
-        margin:auto;
-    }
-
+  
     .textinput {
         min-width: 350px;
         max-width: 350px;
