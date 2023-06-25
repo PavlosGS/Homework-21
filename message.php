@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   // ...
 
   // Prepare email content
-  $to = 'pgsavva@gmail.com'; // Replace with your email address
+  $to = 'pavlos.savva@pavlosdesign.com'; // Replace with your email address
   $headers = "From: $email\r\n";
   $headers .= "Reply-To: $email\r\n";
   $content = "Subject: $subject\r\n";
